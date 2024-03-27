@@ -82,7 +82,6 @@ public class WalletServiceImpl implements WalletService {
 				bank.setBalance(revisedBankBalance);
 				wallet.setBalance(revisedwalletbalance);
 
-				// add transaction
 				Transaction transaction = new Transaction();
 				transaction.setAmount(amount);
 				transaction.setDescription("Money Recived from Bank XXXX" + bank.getAccountNo().substring(8));
@@ -159,7 +158,7 @@ public class WalletServiceImpl implements WalletService {
 						transforee.getWallet().setBalance(revisedBankBalanceREE);
 
 						// add transaction
-						Transaction transaction = new Transaction();
+                        Transaction transaction = new Transaction();
 						transaction.setAmount(amount);
 						transaction.setDescription("Money sent to " + transforee.getWallet().getWalletId());
 						transaction.setRecieversWalletId(transforee.getWallet().getWalletId());

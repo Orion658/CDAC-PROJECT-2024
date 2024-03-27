@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./Profile.css";
 // import AuthService from '../../../services/Auth/AuthService';
 import Navbar from '../../Header/Navbar';
-import Footer from '../../Footer/Footer';
 import axios from '../../../services/API/axios';
 import NavbarLand from '../../Header/NavbarLand';
 
@@ -67,7 +66,6 @@ function Profile() {
             </div>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 

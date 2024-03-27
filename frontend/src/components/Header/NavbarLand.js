@@ -68,7 +68,8 @@ function NavbarLand() {
               to='/auth'
               className='nav-links-mobile'
                 onClick={closeMobileMenu}
-              >               
+              >     
+              LogIn          
               </Link>
             </li>
           </ul> 

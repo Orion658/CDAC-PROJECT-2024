@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../../App.css';
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import AddMoneyForm from '../Forms/AddMoneyForm'
 import BankAccountTable from '../Tables/BankAccountTable';
 import NavbarLand from '../../Header/NavbarLand';
@@ -21,7 +20,6 @@ function AddMoney() {
           <AddMoneyForm/>   
       </div>
       </div>
-      <Footer/>
     </div>
   );
 }

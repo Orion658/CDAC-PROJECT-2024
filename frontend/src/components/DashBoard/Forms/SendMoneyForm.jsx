@@ -30,8 +30,8 @@ const SendMoneyForm = () => {
       setErrorMessage('Invalid mobile number');
       return;
     }
-    if (amount == 0) {
-      setErrorMessage('amount cannot be zero');
+    if (amount <= 0) {
+      setErrorMessage('Invalid Amount');
       return;
     }
     const uniqueId = localStorage.getItem('uniqueId');
@@ -54,8 +54,6 @@ const clickSubmit = async (event) => {
 
     try {
         await sendMoney(sourceMobileNo, recieverMobileNo, amount);
-        setAmount('');
-        setRecieverMobileNo('');
     } catch (error) {
       setErrorMessage("Invalid transaction or Insufficient balance.");
       setTimeout(() => {
@@ -69,13 +67,12 @@ const clickSubmit = async (event) => {
     setSourceMobileNo(localStorage.getItem('mobileNumber'))
   },[]);
 
-    
-
-
+  
   return (
     <div className='flexed'>
-    <div className='boxed'>
-         <h2>images</h2>
+     
+    <div >
+         <img src="images/send Money.jpg" alt="sendmoney"/>
     </div>
     <div >
       <form className="styled-form"  onSubmit={clickSubmit}>

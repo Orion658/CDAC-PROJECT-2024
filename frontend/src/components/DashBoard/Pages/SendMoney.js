@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import SendMoneyForm from '../Forms/SendMoneyForm'
 import NavbarLand from '../../Header/NavbarLand'
 
@@ -10,7 +9,6 @@ const SendMoney = () => {
     <div>
       {isLoggedIn ? <Navbar /> : <NavbarLand />} 
       <SendMoneyForm/>
-      <Footer/>
     </div>
   )
 }

@@ -25,8 +25,11 @@ const PayBillForm = () => {
     const clickSubmit = (event) => {
       // validations
       event.preventDefault();
-      if (!billType || amount == 0 ){
+      if (!billType || amount <= 0 ){
         setErrorMessage("Fill correct information");
+        setTimeout(() => {
+            window.location.reload();
+          }, 2000);
         return;
       }
       const uniqueId = localStorage.getItem('uniqueId');
@@ -34,7 +37,7 @@ const PayBillForm = () => {
       setSuccessMessage("Bill paid Successfully ..")
       setTimeout(() => {
         window.location.reload();
-      }, 1000);
+      }, 2000);
     };
 
     // fecth bills shown in transactions

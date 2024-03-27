@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import AddBenificaryForm from '../Forms/AddBenificaryForm'
 import BeneficiaryTable from '../Tables/BeneficiaryTable'
 import NavbarLand from '../../Header/NavbarLand'
@@ -18,7 +17,6 @@ const AddBenificary = () => {
            <AddBenificaryForm/>
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }

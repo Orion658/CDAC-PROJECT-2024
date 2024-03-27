@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import axios from '../../../services/API/axios';
 import NavbarLand from '../../Header/NavbarLand';
 
@@ -35,7 +34,6 @@ const CheckBalance = () => {
          <h1>Rs. <span className='amountText'>{balance}.00</span></h1> 
       </div>
       <br/>
-      <Footer/>
     </div>
   )
 }

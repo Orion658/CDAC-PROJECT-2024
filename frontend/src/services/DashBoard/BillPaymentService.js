@@ -26,8 +26,6 @@ const BillPaymentService = {
   },
   
 
-  
-
 };
 
 export default BillPaymentService;

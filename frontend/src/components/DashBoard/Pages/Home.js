@@ -3,7 +3,6 @@ import '../../../App.css';
 import Cards from '../../Helper/Cards';
 // import HeroSection from '../HeroSection';
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import NavbarLand from '../../Header/NavbarLand';
 
 function Home() {
@@ -12,7 +11,6 @@ function Home() {
     <div style={{backgroundColor:"grey"}}>
       {isLoggedIn ? <Navbar /> : <NavbarLand />} 
     <Cards />
-    <Footer />
     </div>
   );
 }

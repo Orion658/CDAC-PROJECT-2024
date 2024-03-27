@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import TransactionTable from '../Tables/TransactionTable'
 import NavbarLand from '../../Header/NavbarLand'
 
@@ -15,7 +14,6 @@ const TransactionHistory = () => {
       <TransactionTable/>
     </div>
     <br/>
-    <Footer/>
     </div>
   )
 }

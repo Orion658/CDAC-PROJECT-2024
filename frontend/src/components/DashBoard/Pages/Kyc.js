@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
 import KycForm from '../Forms/KycForm'
 import NavbarLand from '../../Header/NavbarLand'
 const Kyc = () => {
@@ -11,7 +10,6 @@ const Kyc = () => {
       <div className='flexed'>
         <KycForm/>
       </div>
-      <Footer/>
     </div>
   )
 }
